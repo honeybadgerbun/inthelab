@@ -23,4 +23,18 @@ for i in range(9):
     elif second == 2:
         second = 0
         first += 1
-    
+
+print("\nXs go first, Os go second!")
+xs = 0
+os = 0
+
+while xs != 6:
+    if xs < 4:
+        x = input("Pick a space to place your tic: ")
+        o = input("Pick a space to place your tac: ")
+        xs += 1
+    elif xs > 4:
+        x = input("Pick a space to place your tic: ")
+        xs += 1
+    elif xs == 5:
+        x = input("Pick a space to place your tic: ")
