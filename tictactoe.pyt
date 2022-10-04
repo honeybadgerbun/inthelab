@@ -28,13 +28,12 @@ print("\nXs go first, Os go second!")
 xs = 0
 os = 0
 
-while xs != 6:
-    if xs < 4:
-        x = input("Pick a space to place your tic: ")
+for i in range(5):
+    x = input("Pick a space to place your tic: ")
+    xs += 1
+    if xs == 5:
+        break
+    else:
         o = input("Pick a space to place your tac: ")
-        xs += 1
-    elif xs > 4:
-        x = input("Pick a space to place your tic: ")
-        xs += 1
-    elif xs == 5:
-        x = input("Pick a space to place your tic: ")
+        os += 1
+    
